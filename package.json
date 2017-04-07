@@ -1,0 +1,24 @@
+{
+  "name": "deleteme",
+  "version": "1.0.0",
+  "description": "Testing travis-ci deploy to gh-pages",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmamlin/deleteme.git"
+  },
+  "author": "Burke Mamlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bmamlin/deleteme/issues"
+  },
+  "homepage": "https://github.com/bmamlin/deleteme#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
