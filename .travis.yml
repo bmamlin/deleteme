@@ -1,11 +1,12 @@
 language: node_js
-node_js: node
+node_js:
+  "stable"
 deploy:
   local_dir: dist
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
-  	branch: master
+    branch: master
   email: burke@openmrs.org
   name: Burke Mamlin
