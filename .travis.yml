@@ -1,11 +1,6 @@
 language: node_js
 node_js:
   "stable"
-script:
-  - openssl aes-256-cbc -K $encrypted_2b50de2507a8_key -iv $encrypted_2b50de2507a8_iv -in deploy-key.enc -out deploy-key -d
-  - chmod 600 deploy-key
-  - eval `ssh-agent -s`
-  - ssh-add deploy-key
 deploy:
   local_dir: dist
   provider: pages
